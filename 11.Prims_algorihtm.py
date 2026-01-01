@@ -6,7 +6,7 @@ def prims_algorithm(graph):
   pq = [(0, 0)]  # (weight, vertex)
 
   while pq:
-    weight, u = mst.append(heapq.heappop(pq))
+    weight, u = heapq.heappop(pq)
 
     if visited[u]:
       continue
@@ -16,7 +16,7 @@ def prims_algorithm(graph):
     for v , w in graph[u]:
       if not visited[v]:
         heapq.heappush(pq, (w,v))
-    return mst
+  return mst
   
 graph = {
   0:[(1, 2), (3, 6)],
