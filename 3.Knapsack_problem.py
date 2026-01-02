@@ -19,4 +19,3 @@ items = [Item(60,100), Item(100,20), Item(120, 30)]
 capacity = 50
 max_value = fractional_knapsack(items, capacity)
 print(f"Maximum value in the Knapsack = {max_value}")
-          
